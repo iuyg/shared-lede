@@ -9,7 +9,7 @@ sed -i 's/192.168.1.1/192.168.31.1/g' package/base-files/files/bin/config_genera
 #修改固件大小、复制闪存布局文件
 sed -i '/Device\/xiaomi_mi-router-4a-gigabit/,/Mi Router 4A/ s/14848k/16064k/' target/linux/ramips/image/mt7621.mk
 sed -i '/Device\/xiaomi_mi-router-3g-v2/,/mir3g-v2/ s/14848k/16064k/' target/linux/ramips/image/mt7621.mk
-\cp -rf extra-files/mt7621_xiaomi_mi-router-4a-3g-v2.dtsi target/linux/ramips/dts/mt7621_jdcloud_re-cp-02.dtsi
+\cp -rf extra-files/mt7621_jdcloud_re-cp-02.dtsi target/linux/ramips/dts/mt7621_jdcloud_re-cp-02.dtsi
 #优化smartdns配置
 rm -rf feeds/packages/net/smartdns
 rm -rf package/feeds/packages/net/smartdns
